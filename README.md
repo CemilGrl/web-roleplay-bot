@@ -19,7 +19,7 @@
 
 <br /><br />
 
-**800 TL / ay** &nbsp;·&nbsp; **5.000 TL tek seferlik**
+**450 TL / ay** &nbsp;·&nbsp; **2.500 TL tek seferlik**
 
 </div>
 
@@ -183,13 +183,13 @@ Bir orta çağ krallığı, modern bir şehir, büyü akademisi, hastane veya ta
 <tr>
 <td width="50%" align="center" valign="top">
 <h3>AYLIK KULLANIM</h3>
-<h2>800 TL</h2>
+<h2>450 TL</h2>
 <p><strong>Her ay</strong></p>
 <p>Roleplay botu ve web paneliyle sunucunuzu tek merkezden yönetin.</p>
 </td>
 <td width="50%" align="center" valign="top">
 <h3>TEK SEFERLİK</h3>
-<h2>5.000 TL</h2>
+<h2>2.500 TL</h2>
 <p><strong>Tek ödeme</strong></p>
 <p>Tek seferlik satın alma seçeneğiyle aynı gelişmiş altyapıya sahip olun.</p>
 </td>
@@ -256,7 +256,7 @@ Doğrudan <a href="https://discord.com/users/1354736569696911462">Discord üzeri
 
 Kurmak istediğiniz dünyayı anlatın. Karakterler, ekonomi, yönetim ve görsel kimlik için doğru altyapıyı birlikte oluşturalım.
 
-**800 TL / ay &nbsp;·&nbsp; 5.000 TL tek seferlik**
+**450 TL / ay &nbsp;·&nbsp; 2.500 TL tek seferlik**
 
 <br />
 
