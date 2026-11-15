@@ -24,6 +24,8 @@ Discord botu · Web yönetim paneli · Karakter portalı · Roleplay ekonomisi
 
 **Aylık kullanım: 800 TL** &nbsp; | &nbsp; **Tek seferlik satın alma: 5.000 TL**
 
+<a href="https://discord.com/users/1354736569696911462"><img src="https://img.shields.io/badge/Discord-%C4%B0leti%C5%9Fime%20Ge%C3%A7-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="ArseN Development ile Discord üzerinden iletişime geç" /></a>
+
 [**Özellikleri keşfet**](#-neler-sunuyor) &nbsp;·&nbsp; [**Web panelini incele**](#-web-yönetim-paneli) &nbsp;·&nbsp; [**Paket ve fiyatlar**](#-paketler-ve-fiyatlandırma) &nbsp;·&nbsp; [**Satın alma**](#-satın-alma-ve-iletişim)
 
 </div>
@@ -126,7 +128,7 @@ RP etkinliğini ölçülebilir hale getirin; hangi alanlarda oyun oynandığın�
 
 ### 03 — Gelişmiş ekonomi
 
-Rol yapma deneyimini sunucu içindeki ekonomik düzenle destekleyin.
+Rol yapma deneyimini sunucu içindeki ekonomik düzenle destekleyin. Maaşlar sunucunun meslek rollerine göre belirlenebilir; ödeme düzeni ve tutarlar sunucunun ekonomik dengesine uyarlanır.
 
 - Cüzdan, banka, para transferi ve işlem kayıtları.
 - Market ve envanter altyapısı.
@@ -160,7 +162,7 @@ AFK, avatar/banner, davet, mesaj–ses istatistikleri, sıralamalar, çekiliş v
 
 ## 💰 Rol bazlı maaş yönetimi
 
-Roleplay ekonomisinin önemli parçalarından biri olan meslek maaşları, **eski rol bazlı haftalık maaş mantığıyla** çalışır. Sonradan denenen meslek RP kelime şartı veya emote tetiklemeli onay sistemi bu satış paketinin parçası değildir.
+Roleplay ekonomisinin önemli parçalarından biri olan meslek maaşları, **rol bazlı haftalık maaş mantığıyla** çalışır. Her meslek rolü için bir tutar belirlenebilir; dağıtım sırasında aynı üyeye ait ücretler topluca hesaplanır.
 
 ### Maaş nasıl hesaplanır?
 
@@ -218,6 +220,36 @@ Müşteriye sunulan kurulum için kullanılacak modüller, tasarımın kapsamı 
 
 ---
 
+## 🧩 Projene özel sistemler geliştirebilir miyiz?
+
+<div align="center">
+
+### Evet. Hazır özelliklerle sınırlı kalmak zorunda değilsiniz.
+
+*Her RP evreninin kuralları farklıdır. Botunuz ve paneliniz de buna uyum sağlayabilmeli.*
+
+</div>
+
+Standart paket; kayıt, roleplay, ekonomi, moderasyon, güvenlik, log ve web yönetimi gibi temel ihtiyaçları bir araya getirir. Sunucunuzun kurgusu farklı bir sistem gerektiriyorsa **mevcut modüller özelleştirilebilir veya yeni modüller geliştirilebilir**.
+
+| İhtiyaç | Uygulanabilecek örnekler |
+| :--- | :--- |
+| **Özgün evren sistemleri** | Irklar, fraksiyonlar, haneler, akademiler, meslekler veya sunucuya özel RP kuralları |
+| **Karakter deneyimi** | Yeni kimlik alanları, karakter sayfaları, özelleştirilmiş görsel kartlar ve istatistikler |
+| **Ekonomi düzeni** | Rol bazlı maaşlar, farklı ücretler, yeni market öğeleri ve sunucuya özgü işlem akışları |
+| **Yönetim araçları** | Özel başvuru/inceleme süreçleri, yetkili panelleri, otomasyonlar ve rapor ekranları |
+| **Görsel kimlik** | Sunucuya özel renk paleti, uygulama emojileri, Components V2 tasarımları ve web görünümü |
+
+**Özel sistem talepleri kabul edilir.** Hangi sistemin nasıl çalışacağı, Discord ve web tarafında ne gerektirdiği, teslim takvimi ve sınırları proje başlamadan birlikte belirlenir. **Paket kapsamında kararlaştırılan özel geliştirmeler ve VDS için ayrıca ücret alınmaz.** Kapsam dışı yeni taleplerin koşulları ayrıca görüşülür.
+
+<div align="center">
+
+[**Özel sistemini Discord üzerinden anlat**](https://discord.com/users/1354736569696911462)
+
+</div>
+
+---
+
 ## 🔐 Güvenlik ve teknik altyapı
 
 ```mermaid
@@ -261,6 +293,7 @@ flowchart TD
 | Roleplay & ekonomi sistemleri | ✓ | ✓ |
 | Moderasyon, Guard ve loglar | ✓ | ✓ |
 | Sunucuya özel kurulum | Kapsama göre | Kapsama göre |
+| Özel sistem geliştirme | Görüşülen paket kapsamında | Görüşülen paket kapsamında |
 | Ödeme modeli | Aylık | Tek seferlik |
 
 **VDS / barındırma ve paket kapsamındaki özel geliştirmeler için ayrıca ücret alınmaz.** Kurulum, destek ve teslim koşulları sipariş öncesinde netleştirilir. Tek seferlik satın alma, kaynak kodlarını başkalarına yeniden satma veya dağıtma hakkı vermez; lisans koşulları ayrı belirlenir.
@@ -291,19 +324,37 @@ Hayır. Discord ile giriş, herkese yönetim yetkisi vermez. Kritik ayarlar sunu
 <details>
 <summary><b>Maaşlar yalnızca en yüksek role göre mi ödeniyor?</b></summary>
 <br />
-Hayır. Eski maaş düzeninde üyede tanımlı birden fazla maaşlı rol varsa ilgili maaşlar toplanarak tek haftalık ödeme oluşturulur.
+Hayır. Rol bazlı maaş düzeninde üyede tanımlı birden fazla maaşlı rol varsa ilgili maaşlar toplanarak tek haftalık ödeme oluşturulur.
 </details>
 
 <details>
-<summary><b>600 kelimelik meslek maaş sistemi var mı?</b></summary>
+<summary><b>Standart paket dışında özel sistem ekletebilir miyim?</b></summary>
 <br />
-Bu ticari paket tanıtımında kullanılmıyor. Ürün, rol bazlı haftalık otomatik maaş sistemini esas alıyor.
+**Evet.** Sunucunuzun evrenine uygun yeni komutlar, RP mekanikleri, paneller, özel görsel kartlar ve yönetim araçları talep edebilirsiniz. Teknik kapsam, öncelikler ve teslim koşulları görüşülerek netleştirilir. Paket kapsamında kararlaştırılan özel geliştirmeler için ayrıca ücret alınmaz.
 </details>
 
 <details>
-<summary><b>Ürün başka bir roleplay evrenine uyarlanabilir mi?</b></summary>
+<summary><b>Botun ve web sitesinin görünümü sunucuma göre değişebilir mi?</b></summary>
 <br />
-Sunucuya özel tasarım, roller, modüller ve metinler proje kapsamında uyarlanabilir. Her uyarlamanın kapsamı satın alma öncesinde belirlenir.
+Evet. Sunucunun adı, teması, logo/görselleri, uygulama emojileri, renkleri, karakter ve yetkili akışları projeye göre özelleştirilebilir. Örnek tanıtım görselleri bütün teslimatların aynı görünümde olacağı anlamına gelmez.
+</details>
+
+<details>
+<summary><b>Web panelinden maaşlı roller ve ücretler yönetilebilir mi?</b></summary>
+<br />
+Bu özellik satış paketi kapsamında hedeflenmektedir. Bot tarafında rol bazlı haftalık ödeme ve çoklu maaşlı rol toplamı bulunur; web arayüzünden rollerin ve ücretlerin değiştirilmesi entegrasyonu tamamlanıp doğrulandığında kullanıma sunulur.
+</details>
+
+<details>
+<summary><b>Özel geliştirme veya VDS için ek ödeme gerekir mi?</b></summary>
+<br />
+Paket kapsamında baştan kararlaştırılan özel geliştirmeler ve VDS için ayrıca ücret alınmaz. Yeni ve kapsam dışı taleplerin sınırları, destek ve teslim koşulları sipariş öncesinde veya yeni talep sırasında görüşülür.
+</details>
+
+<details>
+<summary><b>Bot farklı roleplay evrenlerine uyarlanabilir mi?</b></summary>
+<br />
+Evet. Farklı roleplay türleri için roller, modüller, metinler ve tasarımlar özelleştirilebilir. Kapsam ve teslim koşulları sipariş öncesinde netleştirilir.
 </details>
 
 <details>
@@ -318,17 +369,31 @@ Hayır. Bu depo bir tanıtım ve dokümantasyon vitrini olarak kullanılabilir. 
 
 <div align="center">
 
-### Topluluğunuz için özel bir roleplay altyapısı mı arıyorsunuz?
+### Sunucunuza özel, modern bir roleplay altyapısı kuralım.
 
-**Botunuzu, web panelinizi ve sunucu kimliğinizi tek projede planlayalım.**
+Botunuzu, web panelinizi ve özgün sistemlerinizi doğrudan proje geliştiricisiyle görüşün.
 
 **800 TL / ay** &nbsp;&nbsp; veya &nbsp;&nbsp; **5.000 TL tek seferlik**
 
-**Demo, teklif ve satın alma için ArseN Development ile iletişime geçin.**
+<a href="https://discord.com/users/1354736569696911462"><img src="https://img.shields.io/badge/Discord-ArseN%20Development%27a%20Yaz-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord üzerinden yaz" /></a>
 
-GitHub deponuzda **Issues** bölümünü açtıysanız [buradan talep oluşturabilirsiniz](../../issues/new). Alternatif iletişim bağlantıları depo sahibi tarafından GitHub profiline eklenebilir.
+**[Discord profilime git ve iletişime geç](https://discord.com/users/1354736569696911462)**
+
+<sub>Discord kullanıcı ID: <code>1354736569696911462</code></sub>
 
 </div>
+
+**Görüşürken sunucu temanızı, istediğiniz modülleri ve aylık/tek seferlik paket tercihinizi paylaşmanız yeterli.** Discord gizlilik ayarları sebebiyle doğrudan mesaj gönderemiyorsanız arkadaşlık isteği gerekebilir.
+
+<details>
+<summary><b>Discord durum kartını görüntüle (Lanyard)</b></summary>
+<br />
+<div align="center">
+  <a href="https://discord.com/users/1354736569696911462"><img src="https://lanyard.cnrad.dev/api/1354736569696911462?theme=dark&bg=0B1629&borderRadius=16px&hideActivity=true&hideSpotify=true&hideDiscrim=true" alt="ArseN Development Discord durumu - Lanyard" /></a>
+</div>
+
+<sub>Bu canlı kartın görüntülenmesi için hesabın <a href="https://discord.com/servers/lanyard-819285379982557265">Lanyard Discord sunucusuna</a> katılmış olması gerekir. Lanyard kullanılamasa bile yukarıdaki Discord profil bağlantısı çalışmaya devam eder. Kart üçüncü taraf bir servis tarafından sunulur.</sub>
+</details>
 
 ---
 
