@@ -1,162 +1,362 @@
 <div align="center">
 
-# ARSEN DEVELOPMENT
+<img src="./assets/kapak.webp" alt="ArseN Development — Web Panelli Gelişmiş Roleplay Botu" width="100%" />
 
-## Web Panelli Gelişmiş Roleplay Botu
+<br />
 
-**Discord sunucuları için bot, web yönetim paneli ve karakter portalını tek yapıda birleştiren roleplay altyapısı.**
+# ArseN Development
 
-Discord.js · Next.js · MongoDB · Discord OAuth2 · Components V2
+### WEB PANELLİ GELİŞMİŞ ROLEPLAY BOTU
 
-**Aylık 800 TL** &nbsp;·&nbsp; **Tek seferlik 5.000 TL**
+**Bir Discord botundan fazlası. Sunucunuzu yönetin, evreninizi yaşatın, topluluğunuzu tek bir ekranda buluşturun.**
+
+Discord botu · Web yönetim paneli · Karakter portalı · Roleplay ekonomisi
+
+<br />
+
+![Discord.js](https://img.shields.io/badge/Discord.js-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-193a2c?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-111827?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-175f40?style=for-the-badge&logo=mongodb&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-111827?style=for-the-badge&logo=vercel&logoColor=white)
+
+<br />
+
+**Aylık kullanım: 800 TL** &nbsp; | &nbsp; **Tek seferlik satın alma: 5.000 TL**
+
+[**Özellikleri keşfet**](#-neler-sunuyor) &nbsp;·&nbsp; [**Web panelini incele**](#-web-yönetim-paneli) &nbsp;·&nbsp; [**Paket ve fiyatlar**](#-paketler-ve-fiyatlandırma) &nbsp;·&nbsp; [**Satın alma**](#-satın-alma-ve-iletişim)
 
 </div>
 
 ---
 
-## Proje hakkında
+## ✦ Roleplay dünyanızın yönetimi artık tek yerde
 
-ArseN Development tarafından geliştirilen bu paket, Discord üzerindeki metin tabanlı roleplay topluluklarının günlük işleyişini tek bir sistem üzerinden yönetmek için tasarlanmıştır. Sunucu üyeleri Discord komutlarını ve kendilerine ait web ekranlarını kullanırken, yetkililer kayıt, moderasyon, roleplay, ekonomi ve bot ayarlarını merkezi bir panelden yönetebilir.
+Bir roleplay sunucusunu canlı tutmak yalnızca komut çalıştırmaktan ibaret değil. Karakter kayıtlarının düzenli olması, RP etkinliğinin takip edilmesi, ekonomik dengenin korunması ve yetkililerin aynı sistem üzerinden çalışması gerekiyor.
 
-Paketin örnek uygulaması **Beacon Hills / Teen Wolf** temasıyla hazırlanmıştır. Sunucu kimliği, içerikler, tasarım ve kullanılacak modüller müşteri sunucusunun ihtiyaçlarına göre özelleştirilebilir. Mevcut bot yapısı tek bir Discord sunucusuna göre yapılandırılmıştır; çoklu sunucu altyapısı olarak tanıtılmamaktadır.
+**ArseN Development Roleplay Altyapısı**, bu ihtiyaçları birbirinden kopuk botlarla değil, birlikte çalışan **Discord botu + web paneli + MongoDB** yapısıyla karşılamak için geliştiriliyor.
 
-## Öne çıkan özellikler
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>◈ Discord Botu</h3>
+      Slash komutlar, Components V2 paneller, kayıt, RP, moderasyon, ekonomi, Guard ve log sistemleri.
+    </td>
+    <td width="33%" valign="top">
+      <h3>◇ Yönetim Paneli</h3>
+      Discord ile giriş, rol ve kanal yapılandırması, sunucu ayarları, yetkili işlemleri ve kayıt geçmişi.
+    </td>
+    <td width="33%" valign="top">
+      <h3>✧ Karakter Portalı</h3>
+      Oyuncuya özel karakter kimliği, RP ilerlemesi, sıralamalar, envanter ve ekonomi görünümü.
+    </td>
+  </tr>
+</table>
 
-| Sistem | Kapsam |
-| :-- | :-- |
-| **Web yönetim paneli** | Discord ile giriş, yetkili erişimi, yapılandırma, işlem geçmişi |
-| **Roleplay** | RP kategori yönetimi, kelime sayımı, sıralamalar, RP seviye ve ödül sistemi |
-| **Ekonomi** | Cüzdan, banka, market, envanter, para transferleri ve işlem kayıtları |
-| **Maaş yönetimi** | Rol bazlı maaşlar, haftalık otomatik ödeme, manuel dağıtım ve maaş listesi |
-| **Kayıt** | Karakter/üye kayıtları, rol işlemleri ve kayıt bilgileri |
-| **Moderasyon** | Ban, kick, mute, jail, uyarı, rol, kanal ve mesaj işlemleri |
-| **Guard** | Yetkisiz değişikliklere karşı korumalar, whitelist, olay takibi ve güvenlik kontrolleri |
-| **Log sistemi** | Sunucu, moderasyon, ekonomi, RP, Guard, komut, konsol ve web işlem kayıtları |
-| **Karakter portalı** | Discord hesabına bağlı karakter, kimlik, RP ve ekonomi verilerini görüntüleme |
-| **Topluluk araçları** | AFK, çekiliş, avatar/banner, davet, istatistik ve diğer yardımcı komutlar |
-
-**Arayüz:** Slash komutlar, Discord **Components V2** bileşenleri, uygulama emojileri ve mobil uyumlu **Liquid Glass** web tasarımı.
-
-## Web yönetim paneli
-
-Web portalı, Discord OAuth2 ile giriş yapan kullanıcının sunucu üyeliğini ve yetkilerini kontrol eder. Üyeler kendilerine ait verileri görüntüler; yetkililer erişim düzeylerine uygun yönetim ekranlarını kullanır.
-
-- **Genel bakış:** Topluluk verileri, etkinlik ve sistem durumları.
-- **Üye ve karakter yönetimi:** Kayıt, kimlik, ekonomi ve RP bilgileri.
-- **Roleplay yönetimi:** Kategoriler, kelime istatistikleri, seviye hedefleri ve ödüller.
-- **Ekonomi yönetimi:** Üye bakiyeleri, banka değerleri ve yetkili işlemleri.
-- **Bot kurulumu:** Desteklenen kanal/rol eşlemeleri, log ayarları, Guard ve diğer kurulum seçenekleri.
-- **Site logları:** Giriş, çıkış ve yönetim işlemlerinin tarihçesi; uygun işlemlerin Discord log kanalına aktarımı.
-- **Mobil kullanım:** Telefon ve tablet ekranlarına uyarlanan modern, yarı saydam panel tasarımı.
-
-Web paneli ile bot arasındaki değişiklik talepleri, doğrudan kullanıcı tarayıcısından Discord botuna komut göndermek yerine **yetki kontrollü bir işlem köprüsü** üzerinden yürütülür.
-
-### Rol ve maaş tutarlarını web panelinden yönetme
-
-**Satış paketinde hedeflenen maaş yönetimi** basit, eski rol bazlı düzendir:
-
-1. Yönetici web panelinden bir **Discord rolü** seçer.
-2. Rolün **haftalık maaş tutarını** belirler veya değiştirir.
-3. İstenmeyen rol–maaş eşlemesini kaldırabilir; güncel listeyi görüntüleyebilir.
-4. Bot, ayarlanan maaşları mevcut ekonomi sistemine göre haftalık olarak yatırır.
-5. Bir kullanıcı birden fazla maaş tanımlı role sahipse **bu rollerin maaşları toplanır** ve tek ödeme yapılır.
-6. Yetkili gerekli olduğunda manuel maaş dağıtımı başlatabilir. Ödemeler ekonomi kayıtlarına işlenir.
-
-**Örnek:** Doktor rolünün haftalık maaşı `750 $`, Öğretmen rolünün maaşı `700 $` olarak ayarlanırsa iki role sahip üye ilgili dağıtımda toplam `1.450 $` alır. Tutarlar örnektir; her sunucuda yönetici tarafından belirlenir.
-
-> **Uygulama durumu:** Eski rol bazlı maaş sistemi botta bulunmaktadır. Web üzerinden **maaşlı rol ekleme, silme ve tutar değiştirme** ekranının botla tam bağlantısı, incelenen eski web sürümünde henüz tamamlanmış değildir. Bu özellik satış paketinin hedef kapsamındadır ve canlı ürün olarak sunulmadan önce tamamlanıp test edilmelidir.
-
-### Maaş modeli hakkında
-
-Bu tanıtım **eski haftalık maaş sistemini** esas alır. Sonradan denenen **600 kelimelik meslek RP'si, mesai anahtar kelimeleri, haftalık üç hak ve yetkili onaylı ödeme** modeli bu ürünün maaş tanımına dahil **değildir**. Maaşlar rol–tutar eşlemelerine göre dağıtılır.
-
-## Kullanıcı deneyimi
-
-### Discord botu
-
-- Tek merkezden erişilen kurulum komutları ve kategori bazlı yönetim.
-- Uygulama emojileriyle uyumlu Components V2 arayüzler.
-- Metin, ses ve roleplay istatistikleri.
-- Karakter kimlikleri ve roleplay odaklı yardımcı özellikler.
-- Güvenlik, moderasyon ve işlem kayıtlarının bütünleşik kullanımı.
-
-### Web sitesi
-
-- Roleplay sunucusunun evrenini ve topluluğunu tanıtan açılış sayfası.
-- Discord ile güvenli giriş.
-- Üyenin karakter ve ekonomi bilgilerinin gösterildiği kişisel panel.
-- RP sıralamaları ve karakter arşivi.
-- Yetkililere özel yönetim ve log ekranları.
-- Masaüstü ve mobil cihazlar için uyarlanmış görünüm.
-
-## Teknik altyapı
-
-| Katman | Teknoloji |
-| :-- | :-- |
-| Discord botu | JavaScript / Node.js / Discord.js |
-| Bot komutları | Slash Commands, Components V2 |
-| Web uygulaması | Next.js / React |
-| Kimlik doğrulama | Discord OAuth2 |
-| Veritabanı | MongoDB |
-| Web barındırma | Vercel uyumlu dağıtım |
-| Bot barındırma | Sürekli çalışan Node.js sunucusu / VDS |
-| Bot–web bağlantısı | MongoDB tabanlı, imzalı ve yetki kontrollü iş kuyruğu |
-
-Hassas yapılandırmalar `.env` ve barındırma servisinin **Environment Variables** bölümünde saklanır. Discord bot tokenı, MongoDB bağlantı bilgileri ve oturum gizli anahtarları GitHub'a eklenmemelidir.
-
-## Paketler ve fiyatlandırma
-
-| Paket | Ücret | Açıklama |
-| :-- | --: | :-- |
-| **Aylık kullanım** | **800 TL / ay** | Bot ve web panelini aylık kullanım modeliyle edinme |
-| **Tek seferlik** | **5.000 TL** | Paket için tek seferlik satın alma seçeneği |
-
-- VDS/barındırma ve paket kapsamındaki özel geliştirmeler için **ayrıca ücret alınmaz**.
-- Sunucuya özel görünüm, roller, komut düzeni ve kullanılacak modüller müşteriyle birlikte netleştirilir.
-- Teslimat, yönetim erişimi ve destek kapsamı satın alma sırasında karşılıklı belirlenir.
-- **Tek seferlik ücret, kaynak kodlarının yeniden satış veya sınırsız dağıtım hakkı verdiği anlamına gelmez.** Lisans koşulları ayrıca belirlenir.
-
-> Fiyatlar Türk lirası cinsindendir. Teklifin kapsamı ve teslim koşulları satın alma öncesinde teyit edilir.
-
-## Örnek proje yapısı
-
-```text
-roleplay-platform/
-├── bot/
-│   ├── src/
-│   ├── images/
-│   └── data/
-└── web/
-    ├── app/
-    ├── components/
-    ├── lib/
-    └── public/
-```
-
-Bu şema bot ve web uygulamasının **ayrı dağıtıldığını** açıklamak içindir. Gerçek depoda klasörlerin isimleri farklı olabilir. Web sitesi Vercel üzerinde, Discord botu ise sürekli çalışan bir Node.js ortamında barındırılır.
-
-## Kurulum ve güvenlik notları
-
-1. Discord botu için gerekli uygulama yetkileri ve **Gateway Intents** tanımlanır.
-2. MongoDB bağlantısı kurulur; bot ve web uygulaması aynı ilgili veritabanı kayıtlarını kullanır.
-3. Discord OAuth2 yönlendirme adresi web uygulamasının alan adına göre yapılandırılır.
-4. Site ve bot arasındaki yönetim köprüsü için ortak, güvenli bir gizli anahtar belirlenir.
-5. Bot kurulum panelinde kanal, rol, log ve Guard ayarları sunucuya göre yapılır.
-6. Maaş rolleri ve tutarları tanımlanır; web maaş yönetimi entegrasyonu teslim öncesinde ayrıca doğrulanır.
-
-**Güvenlik ilkesi:** Web panelinde görülen yetki, bot tarafında da yeniden kontrol edilmelidir. Kritik işlemler ve ödeme hareketleri kayıt altına alınmalıdır.
-
-## Lisans ve iletişim
-
-Bu proje **ticari olarak sunulan bir yazılım paketidir**. GitHub'daki tanıtım ve dokümantasyon, kaynak kodlarının ücretsiz kullanımına, kopyalanmasına veya yeniden dağıtılmasına izin verildiği anlamına gelmez.
-
-Satın alma, demo ve sunucuya özel uyarlamalar için **depo sahibi / ArseN Development** ile iletişime geçin.
+> **Bir sunucuya özel kurulum:** Bu paket mevcut haliyle tek bir Discord sunucusuna göre yapılandırılır. Sunucunun adı, teması, renkleri, rolleri ve kullanılacak modüller ihtiyaca göre uyarlanabilir.
 
 ---
 
+## ◈ Web yönetim paneli
+
 <div align="center">
 
+<img src="./assets/yonetim-paneli.webp" alt="ArseN Control Studio — masaüstü dashboard tasarım konsepti" width="100%" />
+
+<sub>Görsel, ürünün tasarım yönünü göstermek amacıyla hazırlanmış bir arayüz konseptidir. Sayılar örnektir; canlı sunucudan alınmamıştır.</sub>
+
+</div>
+
+### Yönetim için Discord'da komut aramak zorunda kalmayın
+
+Botun desteklediği yönetim işlemlerini modern, sade ve yetkiye göre özelleşen bir web ekranından takip edin. **Discord OAuth2** ile giriş yapan kullanıcının erişim alanı kontrol edilir; hassas değişiklikler yetkili işlem akışı üzerinden gerçekleştirilir.
+
+| Yönetim alanı | Neler yapabilirsiniz? |
+| :--- | :--- |
+| **Genel Bakış** | Sunucu ve bot durumu, topluluk istatistikleri, kayıtlı karakterler ve etkinlik verileri |
+| **Üye Yönetimi** | Kullanıcı kayıtlarını, karakter bilgilerini ve ilgili RP/ekonomi verilerini görüntüleme |
+| **Roleplay Yönetimi** | RP kategori seçimi, kelime takibi, seviye hedefleri, ödül ve sıralama ayarları |
+| **Ekonomi** | Cüzdan/banka verileri, yetkili bakiye işlemleri, market ve ekonomi kayıtları |
+| **Bot Kurulumu** | Kanal–rol eşlemeleri, ilgili sistem ayarları ve desteklenen kurulum işlemleri |
+| **Moderasyon & Guard** | Yetki sınırları, güvenlik kontrolleri, koruma modülleri ve log inceleme |
+| **Site İşlem Geçmişi** | Giriş–çıkış ve yönetim işlemlerinin denetlenebilir kayıtları |
+
+**Tek kaynak, tutarlı veri:** Discord botu ile web paneli, ilgili MongoDB kayıtlarını ortak kullanır. Yetki gerektiren işlemler için bot tarafındaki doğrulamaların korunması hedeflenir.
+
+---
+
+## ◇ Mobil kullanım için de tasarlandı
+
+<div align="center">
+
+<img src="./assets/mobil-deneyim.webp" alt="ArseN web paneli — mobil dashboard ve karakter ekranı tasarım konsepti" width="100%" />
+
+<sub>Mobil görünüm konsepti; gerçek ekran görüntüsü değildir.</sub>
+
+</div>
+
+Web paneli yalnızca masaüstü bilgisayarda kullanılmak üzere düşünülmedi. Telefon ve tabletlerde de hızlı erişim sunan **Liquid Glass** tasarım yaklaşımı kullanıldı.
+
+- **Mobil gezinme:** Ana sayfa, üye paneli ve yönetim ekranlarına kısa yoldan ulaşım.
+- **Uyarlanabilir düzen:** Dar ekranlarda tek sütunlu formlar, okunabilir tablolar ve dokunmaya uygun kontroller.
+- **Kişisel üye ekranı:** Karakter bilgileri, seviye, RP istatistikleri ve ekonomi verileri.
+- **Tutarlı görsel kimlik:** Gece laciverti, petrol mavisi, saydam yüzeyler ve yumuşak geçişler.
+
+---
+
+## ✧ Neler sunuyor?
+
+### 01 — Karakter ve kayıt sistemleri
+
+Karakterlerin yalnızca Discord rollerinden ibaret kalmadığı, sunucu evrenine ait kişisel verilerinin de takip edildiği bir deneyim.
+
+- Üye kayıt, rol seçimi ve kayıt geçmişi.
+- Karakter kimliği, profil görseli ve ek kimlik alanları.
+- Web üzerinden karakter bilgilerinin görüntülenmesi.
+- Sunucuya özel karşılama, kayıt ve rol arayüzleri.
+
+### 02 — Roleplay sayımı ve ilerleme
+
+RP etkinliğini ölçülebilir hale getirin; hangi alanlarda oyun oynandığını ve topluluğun nasıl geliştiğini görün.
+
+- Yönetici tarafından seçilen **RP kategorilerinde kelime sayımı**.
+- Kullanıcı bazında toplam kelime ve istatistik takibi.
+- **RP seviye sistemi**, ödül rolleri ve isteğe bağlı ekonomi ödülleri.
+- RP sıralamaları ve web üzerinden kişisel ilerleme ekranı.
+
+### 03 — Gelişmiş ekonomi
+
+Rol yapma deneyimini sunucu içindeki ekonomik düzenle destekleyin.
+
+- Cüzdan, banka, para transferi ve işlem kayıtları.
+- Market ve envanter altyapısı.
+- Yetkili bakiye işlemleri ve ekonomi logları.
+- Rol bazlı **haftalık maaş dağıtımı**.
+
+### 04 — Moderasyon ve güvenlik
+
+Topluluğunuz büyüdüğünde yönetim yükünü kontrol altında tutmaya yardımcı araçlar.
+
+- Ban, unban, kick, mute, jail ve uyarı işlemleri.
+- Mesaj, isim, rol ve ilgili üye yönetimi araçları.
+- **Guard:** Yetkisiz kanal/rol değişikliklerine, riskli işlemlere ve toplu saldırı örüntülerine karşı koruma modülleri.
+- Whitelist, işlem sınırları ve olay kayıtları.
+
+### 05 — Log ve işlem denetimi
+
+Bir işlem gerçekleştiğinde kimin, neyi, ne zaman yaptığını geriye dönük takip etmek için ayrı kayıt alanları.
+
+- Üye, moderasyon, mesaj, kanal, ses ve sunucu logları.
+- RP, ekonomi, Guard ve komut kayıtları.
+- Konsol loglarının uygun Discord kanalına aktarımı.
+- Web oturumları ve yönetim işlemleri için **site logları**.
+- Discord üzerinde botun görünümüyle uyumlu **Components V2 Container** mesajları.
+
+### 06 — Günlük topluluk araçları
+
+AFK, avatar/banner, davet, mesaj–ses istatistikleri, sıralamalar, çekiliş ve yardımcı Discord komutları tek bot çatısında bulunabilir. Modüller kurulum kapsamına göre yapılandırılır.
+
+---
+
+## 💰 Rol bazlı maaş yönetimi
+
+Roleplay ekonomisinin önemli parçalarından biri olan meslek maaşları, **eski rol bazlı haftalık maaş mantığıyla** çalışır. Sonradan denenen meslek RP kelime şartı veya emote tetiklemeli onay sistemi bu satış paketinin parçası değildir.
+
+### Maaş nasıl hesaplanır?
+
+**Bir üye birden fazla maaşlı Discord rolüne sahipse rollerinin ücretleri toplanır ve üye başına tek ödeme yapılır.**
+
+| Örnek rol | Örnek haftalık tutar |
+| :--- | ---: |
+| Şerif | 1.000 $ |
+| FBI Ajanı | 800 $ |
+| Doktor | 750 $ |
+| Öğretmen | 700 $ |
+| Hemşire | 600 $ |
+| Garson | 500 $ |
+
+**Örnek:** Doktor ve Öğretmen rollerine sahip bir üyenin haftalık maaşı **750 $ + 700 $ = 1.450 $** olur. Yukarıdaki tutarlar tanıtım amaçlıdır; müşterinin sunucusuna göre belirlenir.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<b>Bot tarafında mevcut</b>
+<ul>
+<li>Maaşlı Discord rollerini tanımlama</li>
+<li>Haftalık otomatik dağıtım</li>
+<li>Gerektiğinde yetkili tarafından manuel dağıtım</li>
+<li>Birden fazla maaşlı rolü toplayarak ödeme</li>
+</ul>
+
+</td>
+<td width="50%" valign="top">
+
+<b>Web paneline hedeflenen entegrasyon</b>
+<ul>
+<li>Rol seçerek maaş ekleme</li>
+<li>Tutar güncelleme ve rol kaldırma</li>
+<li>Güncel maaş listesini görüntüleme</li>
+<li>Değişikliklerin botun ödeme sistemine aktarılması</li>
+</ul>
+
+</td>
+</tr>
+</table>
+
+> **Şeffaf geliştirme notu:** Web üzerinden maaşlı rol ve ücret düzenleme, satış paketi için belirlenen kapsamda yer alıyor; incelenen eski web altyapısında entegrasyonu henüz tam tamamlanmış değil. Satışta çalışan özellik olarak sunulmadan önce bağlantı ve ödeme senaryoları canlı ortamda doğrulanmalıdır.
+
+---
+
+## ✦ Sunucunuzun kimliğine uyarlanır
+
+ArseN'in örnek uygulamalarından biri, **Beacon Hills / Teen Wolf** evreni için hazırlanmış koyu lacivert ve ay ışığı temalı web sitesidir. Ancak ürün tek bir evrenin ismine veya görünümüne bağlı olmak zorunda değildir.
+
+**Fantastik roleplay**, **şehir / yaşam**, **hastane**, **okul**, **monarşi** veya **özgün evren** topluluklarında sunucunun temasına uygun metin, görsel, rol ve modül düzenlemeleri yapılabilir.
+
+Müşteriye sunulan kurulum için kullanılacak modüller, tasarımın kapsamı ve rol yapısı önceden netleştirilir. Bu tanıtım, her evren için bütün modüllerin otomatik ve hazır olduğu anlamına gelmez.
+
+---
+
+## 🔐 Güvenlik ve teknik altyapı
+
+```mermaid
+flowchart TD
+    A[Discord oyuncuları] --> B[Discord Botu]
+    C[Web ziyaretçileri] --> D[Next.js + Discord OAuth2]
+    B <--> E[(MongoDB)]
+    D <--> E
+    D --> F[Yetkili işlem kuyruğu]
+    F --> B
+```
+
+| Katman | Tercih edilen teknoloji |
+| :--- | :--- |
+| Discord uygulaması | **Discord.js / Node.js** |
+| Komut ve mesaj arayüzleri | **Slash Commands / Components V2** |
+| Web yönetimi | **Next.js / React** |
+| Giriş ve kimlik doğrulama | **Discord OAuth2** |
+| Veritabanı | **MongoDB** |
+| Web dağıtımı | **Vercel** |
+| Bot çalıştırma | Sürekli çalışan Node.js ortamı |
+| Yönetim işlemleri | Yetki kontrollü, MongoDB tabanlı bot–web köprüsü |
+
+**Güvenlik yaklaşımı:** Discord tokenı, bağlantı adresleri ve oturum sırları web tarayıcısına ya da herkese açık depoya konmaz. Yönetim panelinde görülen izinler, hassas işlemler sırasında bot tarafından da doğrulanmalıdır.
+
+---
+
+## 💎 Paketler ve fiyatlandırma
+
+<div align="center">
+
+### İhtiyacınıza uygun satın alma biçimini seçin
+
+</div>
+
+|  | **Aylık Kullanım** | **Tek Seferlik** |
+| :--- | :---: | :---: |
+| **Ücret** | **800 TL / ay** | **5.000 TL** |
+| Discord botu | ✓ | ✓ |
+| Web yönetim paneli | ✓ | ✓ |
+| Roleplay & ekonomi sistemleri | ✓ | ✓ |
+| Moderasyon, Guard ve loglar | ✓ | ✓ |
+| Sunucuya özel kurulum | Kapsama göre | Kapsama göre |
+| Ödeme modeli | Aylık | Tek seferlik |
+
+**VDS / barındırma ve paket kapsamındaki özel geliştirmeler için ayrıca ücret alınmaz.** Kurulum, destek ve teslim koşulları sipariş öncesinde netleştirilir. Tek seferlik satın alma, kaynak kodlarını başkalarına yeniden satma veya dağıtma hakkı vermez; lisans koşulları ayrı belirlenir.
+
+### Kimler için uygun?
+
+- Kendi evrenini büyütmek ve üyelerine profesyonel bir deneyim yaşatmak isteyen **roleplay sunucuları**.
+- Moderasyon, RP, ekonomi ve kayıt için farklı botlar yönetmek istemeyen **sunucu sahipleri**.
+- İşlemlerini Discord komutları ile **web paneli arasında bölüştürmek** isteyen yetkili ekipler.
+- Discord verilerini modern bir web arayüzünde göstermek isteyen **topluluk yöneticileri**.
+
+---
+
+## ❔ Sık sorulan sorular
+
+<details>
+<summary><b>Web panelini telefondan kullanabilir miyim?</b></summary>
+<br />
+Evet. Site arayüzü telefon ve tablet ekranları dikkate alınarak tasarlanmıştır. Yönetim yetkileriniz, Discord hesabınız ve sunucu rolünüz doğrultusunda belirlenir.
+</details>
+
+<details>
+<summary><b>Herhangi bir Discord hesabı yönetim paneline erişebilir mi?</b></summary>
+<br />
+Hayır. Discord ile giriş, herkese yönetim yetkisi vermez. Kritik ayarlar sunucu sahibinin veya ilgili yetkiye sahip hesapların erişimine göre sınırlandırılır.
+</details>
+
+<details>
+<summary><b>Maaşlar yalnızca en yüksek role göre mi ödeniyor?</b></summary>
+<br />
+Hayır. Eski maaş düzeninde üyede tanımlı birden fazla maaşlı rol varsa ilgili maaşlar toplanarak tek haftalık ödeme oluşturulur.
+</details>
+
+<details>
+<summary><b>600 kelimelik meslek maaş sistemi var mı?</b></summary>
+<br />
+Bu ticari paket tanıtımında kullanılmıyor. Ürün, rol bazlı haftalık otomatik maaş sistemini esas alıyor.
+</details>
+
+<details>
+<summary><b>Ürün başka bir roleplay evrenine uyarlanabilir mi?</b></summary>
+<br />
+Sunucuya özel tasarım, roller, modüller ve metinler proje kapsamında uyarlanabilir. Her uyarlamanın kapsamı satın alma öncesinde belirlenir.
+</details>
+
+<details>
+<summary><b>Bu GitHub deposu açık kaynak mı?</b></summary>
+<br />
+Hayır. Bu depo bir tanıtım ve dokümantasyon vitrini olarak kullanılabilir. Kaynak koda erişim, kopyalama, değiştirme ve dağıtım hakları satın alma anlaşmasına bağlıdır.
+</details>
+
+---
+
+## 📩 Satın alma ve iletişim
+
+<div align="center">
+
+### Topluluğunuz için özel bir roleplay altyapısı mı arıyorsunuz?
+
+**Botunuzu, web panelinizi ve sunucu kimliğinizi tek projede planlayalım.**
+
+**800 TL / ay** &nbsp;&nbsp; veya &nbsp;&nbsp; **5.000 TL tek seferlik**
+
+**Demo, teklif ve satın alma için ArseN Development ile iletişime geçin.**
+
+GitHub deponuzda **Issues** bölümünü açtıysanız [buradan talep oluşturabilirsiniz](../../issues/new). Alternatif iletişim bağlantıları depo sahibi tarafından GitHub profiline eklenebilir.
+
+</div>
+
+---
+
+<details>
+<summary><b>Ürünü teslim alırken neler kontrol edilir?</b></summary>
+<br />
+
+- Discord botunun ilgili sunucuya kurulumu ve gerekli izinler
+- MongoDB bağlantısı, kayıtların okunması ve yazılması
+- Web sitesinde Discord OAuth2 ile giriş
+- Yöneticiler için rol ve yetki doğrulaması
+- RP sayacı, ekonomi ve haftalık maaş akışları
+- Web üzerinden maaş yönetimi bağlantısının tamamlanması ve test edilmesi
+- Log kanalları, Guard ve temel yönetim işlemlerinin doğrulanması
+
+</details>
+
+## Lisans ve kullanım
+
+Bu ürün **ArseN Development** tarafından ticari amaçla geliştirilen bir yazılım paketidir. Tanıtım görselleri ve dokümantasyonun erişilebilir olması, yazılımın açık kaynak ya da ücretsiz dağıtılabilir olduğu anlamına gelmez. Kaynak kodu ve ticari kullanım hakları teslim anlaşmasıyla belirlenir.
+
+<div align="center">
+
+---
+
 **ArseN Development**  
-*Roleplay toplulukları için Discord botları ve web yönetim sistemleri.*
+*Discord için rol yapma deneyimleri, güçlü yönetim araçları ve modern web panelleri.*
+
+<img src="./assets/paylasim-karti.webp" alt="ArseN Development — proje tanıtım görseli" width="70%" />
 
 </div>
